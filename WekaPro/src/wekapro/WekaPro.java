@@ -5,6 +5,8 @@
  */
 package wekapro;
 
+import weka.classifiers.trees.J48;
+
 /**
  *
  * @author FPT
@@ -51,6 +53,9 @@ public class WekaPro {
         model.buildDecisionTree();
         model.evaluateDecicsonTree();
         System.out.println(model);
+        //model.saveModel("C:\\Users\\FPT\\Desktop\\models\\decision-tree", model.tree);
+        model.tree =(J48)model.loadModel("C:\\Users\\FPT\\Desktop\\models\\decsiontree.model");
+        model.predictClassLabel(model.testset);
     }
     
 }
