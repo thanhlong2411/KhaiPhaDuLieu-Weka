@@ -45,8 +45,6 @@ class MyKnowledgeModel {
         if(d_opts != null){
             this.model_options = weka.core.Utils.splitOptions(d_opts);
         }
-        
-    
    }
    
    
