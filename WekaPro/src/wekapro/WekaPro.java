@@ -61,10 +61,9 @@ public class WekaPro {
         //MyNaiveBayesModel model = new MyNaiveBayesModel();
         //model.buildNaiveBayes("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
         //model.evaluateNaivebayes("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
-       // model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff",
-       //                             "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-nb.arff");
-       // System.out.println(model);
-        
+        //model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff",
+          //                          "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-nb.arff");
+        //System.out.println(model);
         
         MyNeuralNetworkModel model = new MyNeuralNetworkModel("",
                                 "-L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a -R",
@@ -74,6 +73,7 @@ public class WekaPro {
         model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff",
                                     "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-ann.arff");
         System.out.println(model);
+       
     }
     
 }
