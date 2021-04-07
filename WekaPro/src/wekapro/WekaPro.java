@@ -118,13 +118,25 @@ public class WekaPro {
         
         //phuong phap voting
         
-        MyVotingModel model = new MyVotingModel("",null
+//        MyVotingModel model = new MyVotingModel("",null
+//                        ,null);
+//        model.buildMyVotingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
+//        model.evaluateVotingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
+//        model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff", 
+//               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-vote .arff");
+//        System.out.println("Finished");
+        
+        //phuongphap stacking
+        
+        MyBlendingModel model = new MyBlendingModel("",null
                         ,null);
-        model.buildMyVotingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
-        model.evaluateVotingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
+        model.buildMyBlendingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
+        model.evaluateBlendingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
         model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff", 
-               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-vote .arff");
+               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-blending.arff");
         System.out.println("Finished");
+        
+        
     }
     
 }
