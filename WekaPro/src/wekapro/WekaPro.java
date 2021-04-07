@@ -93,6 +93,8 @@ public class WekaPro {
 //               "C:\\Users\\FPT\\Desktop\\CHUDE7\\iris-predict-knn.arff");
 //        System.out.println(model);
         
+
+
           //phuong pháp Bagging
 //        MyBaggingModel model = new MyBaggingModel("",null
 //                        ,null);
@@ -101,15 +103,28 @@ public class WekaPro {
 //        model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff", 
 //               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-bag.arff");
 //        System.out.println("Finished");
+
+
         //phuong pháp boosting
-        MyBoostingModel model = new MyBoostingModel("",null
-                        ,null);
-        model.buildMyBoostingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
-        model.evaluateBoostingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
-        model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff", 
-               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-boost.arff");
-        System.out.println("Finished");
+//        MyBoostingModel model = new MyBoostingModel("",null
+//                        ,null);
+//        model.buildMyBoostingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
+//        model.evaluateBoostingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
+//        model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff", 
+//               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-boost.arff");
+//        System.out.println("Finished");
         
+        
+        
+        //phuong phap voting
+        
+        MyVotingModel model = new MyVotingModel("",null
+                        ,null);
+        model.buildMyVotingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
+        model.evaluateVotingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
+        model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff", 
+               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-vote .arff");
+        System.out.println("Finished");
     }
     
 }
