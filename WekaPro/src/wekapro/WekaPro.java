@@ -93,12 +93,21 @@ public class WekaPro {
 //               "C:\\Users\\FPT\\Desktop\\CHUDE7\\iris-predict-knn.arff");
 //        System.out.println(model);
         
-        MyBaggingModel model = new MyBaggingModel("",null
+          //phuong pháp Bagging
+//        MyBaggingModel model = new MyBaggingModel("",null
+//                        ,null);
+//        model.buildMyBaggingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
+//        model.evaluateBaggingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
+//        model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff", 
+//               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-bag.arff");
+//        System.out.println("Finished");
+        //phuong pháp boosting
+        MyBoostingModel model = new MyBoostingModel("",null
                         ,null);
-        model.buildMyBaggingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
-        model.evaluateBaggingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
+        model.buildMyBoostingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-train.arff");
+        model.evaluateBoostingModel("C:\\Users\\FPT\\Desktop\\chude5\\iris-test.arff");
         model.predictClassLabel("C:\\Users\\FPT\\Desktop\\chude5\\iris-unlabel.arff", 
-               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-bag.arff");
+               "C:\\Users\\FPT\\Desktop\\chude5\\iris-predict-boost.arff");
         System.out.println("Finished");
         
     }
